@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <head>
+    <title>Herexamen</title>
+    <script type="module" src="./js/index.js" defer></script>
+    <link href="assets/reset.css" rel="stylesheet" />
+    <link href="assets/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="header" class="y">Sensor 1</h1>
+      <canvas id="chart"></canvas>
+      <select name="filter" id="typeFilter">
+        <option value="all">All</option>
+        <option value="CO2">CO2</option>
+        <option value="VOC">VOC</option>
+        <option value="PM25">PM25</option>
+        <option value="PM10">PM10</option>
+      </select>
+      <table>
+        <thead>
+          <tr><th>Unit</th><th>Value</th><th>Recorded on</th></tr>
+        </thead>
+        <tbody id="measurements">
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
